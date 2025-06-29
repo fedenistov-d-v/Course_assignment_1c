@@ -53,12 +53,13 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Сотрудник: " + lastName + ' ' +
-                firstName + ' ' +
-                middleName + ";\t" +
-                department + ";\t" +
-                salary + 'р' + ";\t" +
-                id;
+        return String.format("%2d %s %7d %s %s %s %n",
+                id,
+                department,
+                salary,
+                lastName,
+                firstName,
+                middleName);
     }
 
     @Override
